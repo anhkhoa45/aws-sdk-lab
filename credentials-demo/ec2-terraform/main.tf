@@ -28,7 +28,7 @@ data "aws_ami" "ubuntu" {
 
 resource "aws_instance" "web" {
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t3.micro"
+  instance_type = "t3.medium"
   iam_instance_profile = aws_iam_instance_profile.main.name
 
   tags = {
