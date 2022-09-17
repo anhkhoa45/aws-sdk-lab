@@ -9,7 +9,7 @@ B3: Clone repo aws-sdk-lab
 B4: Chạy setup.sh để cài đặt môi trường
 
 ```shell
-bash aws-sdk-lab/credentials-demo/setup.sh
+bash aws-sdk-lab/credentials-demo/ec2-terraform/setup.sh
 ```
 
 ## Instance profile
@@ -19,7 +19,7 @@ Sau khi đã cài đặt xong. EC2 instance vừa tạo sẽ sử dụng instanc
 Chạy lệnh sau để xem credentials hiện tại đang sử dụng là gì
 
 ```shell
-python3 get-caller-identity.py
+python3 get_caller_identity.py
 ```
 
 ## File ~/.aws/credentials
@@ -53,7 +53,7 @@ output = json
 Chạy lại code get-caller-identity để xem user hiện tại là gì
 
 ```
-python3 get-caller-identity.py
+python3 get_caller_identity.py
 ```
 
 ## Environment variables
@@ -69,7 +69,7 @@ export AWS_REGION=ap-southeast-1
 Thử chạy lại get-caller-identity và xem kết quả
 
 ```shell
-python3 get-caller-identity.py
+python3 get_caller_identity.py
 ```
 
 ## Application config
